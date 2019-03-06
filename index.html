@@ -4,11 +4,40 @@
         <script src="assets/code.js"></script>
     </head>
     
-    <body>
-        <table id="header">
+    <body onscroll="checkScroll();" onload="checkUrl();">
+        <table id="menu" class="closeAnim">
+            <tr>
+                <td id="closer">
+                    <div id="close" onclick="menu('closeAnim', 'openAnim');">
+                        <div id="closeLine1" class="closeLines"></div>
+                        <div id="closeLine2" class="closeLines"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                    <a href="index.html?menu=true" class="navText">Home</a>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                    <a href="robotics.html?menu=true" class="navText">Robotics</a>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                        <a href="regrets.html?menu=true" class="navText">Regrets</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <table id="header" class="clearAnim">
             <tr>
                 <td id="expander">
-                    <div id="exp" onclick="menu();">
+                    <div id="exp" onclick="menu('openAnim', 'closeAnim');">
                         <div id="line1" class="line"></div>
                         <div id="line2" class="line"></div>
                         <div id="line3" class="line"></div>
@@ -21,6 +50,75 @@
                 </td>
             </tr>
         </table>
+        <!--
+            content box 1 - Me
+            My name is Tyler Silva and I am graduating from Assabet Valley Regional Technical  School this year. I wanted to make this website to display some of my greatest memories, recognize some of the people that helped me the most, and point out some of the things I wish happened differently. this year has had some of the highest and lowest points of my entire life, and I would like to recognize some of those points on both ends of the spectrum.on this page I will be going over the people i’m grateful for. the robotics page is about my biggest accomplishments this year, the things I’m happy about completing, and my favorite memories.
+
+            content box 2 - Jared (red)
+            Jared (not Brudner) [last name left out for anonymity] is a close friend of mine who has a Bachelors of Science (BS) in physics and is currently working towards his Doctor of Philosophy (Ph.D.) in Applied Mathematics. he has helped me immensely with many things relating to math, such as the code for my physics engine, the code for the FTC Robot (look in robotics to find a link to a demo of it!), the proof of that equation, and general calculus classes. he's also a good writer and has helped me with grammar, word choice, and more for English.
+
+            content box 3 - Bill
+            Bill Carr is a mentor for the Assabet Valley Regional Technical High School Robotics team, 157 Aztechs, and has been a major help to me and my programming abilities these past 2 years. He has spent 25 years as a software developer and project lead for large companies, and currently is an owner of New England Clean Energy. (add link) Bill is a graduate if Worcester Polytechnic Institute with bachelor’s degree in Mechanical Engineering and a master’s degree in Computer Science, and has passed a lot of the knowledge he's gained from those degrees and jobs on to many of the students at robotics, including me.
+
+            content box 4 - Fletcher
+            Marcus Fletcher is a paraprofessional at Assabet Valley Regional Technical High School, and the lead mentor for the same school's robotics team, 157 aztechs. he joined the robotics team as a student in 1997, and has been a mentor since. he has gained a significant amount of knowledge on how robots work, and shares that with the students on the team in order to help them build a better robot, and learn more about how robots work. he is always willing to help, and makes tremendous sacrifices for the robot, including his own free time, where he occasionally goes an entire week spending 5-6 hours a day, 
+        -->
+        <div id="content">
+            <img src="assets/homeBackground.jpg" id="headerIMG"></img>
+            <div id="spacer"></div>
+            <table class="homeBox">
+                <tr>
+                    <td class="homeImgBox">
+                        <img src="assets/me.jpeg" class="homeImg"></img>
+                    </td>
+                    <td class="homeTxt">
+                        <p>
+                                My name is Tyler Silva and I am graduating from Assabet Valley Regional Technical  School this year. I wanted to make this website to display some of my greatest memories, recognize some of the people that helped me the most, and point out some of the things I wish happened differently. This year has had some of the highest and lowest points of my entire life, and I would like to recognize some of those points on both ends of the spectrum. On this page I will be going over the people i’m grateful for. The robotics page is about my biggest accomplishments this year, the things I’m happy about completing, and my favorite memories.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="homeBox">
+                <tr>
+                    <td class="homeImgBox">
+                        <img src="assets/red.jpg" class="homeImg"></img>
+                    </td>
+                    <td class="homeTxt">
+                        <p>
+                                Jared (not Brudner) is a close friend of mine who has a Bachelors of Science (BS) in physics and is currently working towards his Doctor of Philosophy (Ph.D.) in Applied Mathematics. He has helped me immensely with many things relating to math, such as the code for my physics engine, the code for the FTC Robot (look in robotics to find a link to a demo of it!), the proof of that equation, and general calculus classes. He's also a good writer and has helped me with grammar, word choice, and more for English.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="homeBox">
+                <tr>
+                    <td class="homeImgBox">
+                        <img src="assets/Bill-final-web.jpg" class="homeImg"></img>
+                    </td>
+                    <td class="homeTxt">
+                        <p>
+                                Bill Carr is a mentor for the Assabet Valley Regional Technical High School Robotics team, 157 Aztechs, and has been a major help to me and my programming abilities these past 2 years. He has spent 25 years as a software developer and project lead for large companies, and currently is an owner of <a href="https://newenglandcleanenergy.com/">New England Clean Energy</a>. He is a graduate if Worcester Polytechnic Institute with bachelor’s degree in Mechanical Engineering and a master’s degree in Computer Science, and has passed a lot of the knowledge he's gained from those degrees and jobs on to many of the students at robotics, including me.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="homeBox">
+                <tr>
+                    <td class="homeImgBox">
+                        <img src="assets/fletcher.jpg" class="homeImg"></img>
+                    </td>
+                    <td class="homeTxt">
+                        <p>
+                                Marcus Fletcher is a paraprofessional at Assabet Valley Regional Technical High School, and the lead mentor for the same school's robotics team, 157 aztechs. He joined the robotics team as a student in 1997, and has been a mentor since. He has gained a significant amount of knowledge on how robots work, and shares that with the students on the team in order to help them build a better robot, and learn more about how robots work. he is always willing to help, and makes tremendous sacrifices for the robot, including his own free time, where he occasionally goes an entire week spending 5-6 hours a day.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <marquee id="footer">
+            <p id="footerText">Tyler M Silva Jr. 3/x/2019. TylerSilva2019@gmail.com. Computer Programing and Web Development, Assabet Valley Regional Technical High School. 
+            215 Fitchburg St, Marlborough, MA. (508) 485-9430</p>
+        </marquee>
     
     </body>
 </html>
