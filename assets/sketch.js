@@ -6,40 +6,40 @@ function setup() {
   canv.parent(content);
 }
 function setmovement(x, y)
-    {
-        //Sets the motor values for directional movement.
-        var motors = [0, 0, 0, 0, 0];
-        if (x >= 0 && y >= 0)
-        {
-            motors[0] = y - x;
-            motors[1] = Math.min(-x, -y);
-            motors[2] = x - y;
-            motors[3] = Math.max(x, y);
-        }
-        else if (x >= 0)
-        {
-            motors[0] = Math.min(-x, y);
-            motors[1] = abs(y) - x;
-            motors[2] = Math.max(x, -y);
-            motors[3] = x - abs(y);
-        }
-        else if (x < 0 && y >= 0)
-        {
-            motors[0] = Math.max(-x, y);
-            motors[1] = abs(x) - y;
-            motors[2] = Math.min(x, -y);
-            motors[3] = y - abs(x);
-        }
-        else
-        {
-            motors[0] = abs(x) - abs(y);
-            motors[1] = Math.max(-x, -y);
-            motors[2] = abs(y) - abs(x);
-            motors[3] = Math.min(x, y);
-        }
-        motors[4] = motors[0] + motors[1] + motors[2] + motors[3];
-        return motors;
-    }
+{
+  //Sets the motor values for directional movement.
+  var motors = [0, 0, 0, 0, 0];
+  if (x >= 0 && y >= 0)
+  {
+    motors[0] = y - x;
+    motors[1] = Math.min(-x, -y);
+    motors[2] = x - y;
+    motors[3] = Math.max(x, y);
+  }
+  else if (x >= 0)
+  {
+    motors[0] = Math.min(-x, y);
+    motors[1] = abs(y) - x;
+    motors[2] = Math.max(x, -y);
+    motors[3] = x - abs(y);
+  }
+  else if (x < 0 && y >= 0)
+  {
+    motors[0] = Math.max(-x, y);
+    motors[1] = abs(x) - y;
+    motors[2] = Math.min(x, -y);
+    motors[3] = y - abs(x);
+  }
+  else
+  {
+    motors[0] = abs(x) - abs(y);
+    motors[1] = Math.max(-x, -y);
+    motors[2] = abs(y) - abs(x);
+    motors[3] = Math.min(x, y);
+  }
+  motors[4] = motors[0] + motors[1] + motors[2] + motors[3];
+  return motors;
+}
 function addAll(vectors)
 {
     var retval = createVector(0, 0);
