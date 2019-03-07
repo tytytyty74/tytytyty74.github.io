@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/code.js"></script>
+        <script src="assets/sketch.js"></script>
+        <script src="assets/p5.min.js"></script>
+    </head>
+    
+    <body onscroll="checkScroll();">
+        <table id="menu" class="closeAnim">
+            <tr>
+                <td id="closer">
+                    <div id="close" onclick="menu('closeAnim', 'openAnim');">
+                        <div id="closeLine1" class="closeLines"></div>
+                        <div id="closeLine2" class="closeLines"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                    <a href="index.html" class="navText">Home</a>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                    <a href="robotics.html" class="navText">Robotics</a>
+                </td>
+            </tr>
+            <tr class="navitem">
+                <td>
+                        <a href="regrets.html" class="navText">Regrets</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+        <table id="header" class="clearAnim">
+            <tr>
+                <td id="expander">
+                    <div id="exp" onclick="menu('openAnim', 'closeAnim');">
+                        <div id="line1" class="line"></div>
+                        <div id="line2" class="line"></div>
+                        <div id="line3" class="line"></div>
+                    </div>
+                </td>
+                <td id="title" valign="center">
+                    <div id="myHeader">
+                        Senior Year Reflection
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="content">
+            <div id="spacer2"></div>
+            <table class="homeBox">
+                <tr>
+                    <td class="homeImgBox">
+                        <div id="p5" class="homeImg"></div>
+                    </td>
+                    <td class="homeTxt">
+                        <p>
+                            This is a working demo of the code I wrote for the Aztechs 12566 FIRST Tech Challenge 2019 robot. Just hover your mouse in the direction you want to go. The lines on the corners are the direction each wheel is spinning, with the length of the line showing the speed at which the wheel is spinning. The line in the center is pointing the direction the robot will move. Go ahead and play with it a bit! 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+        <marquee id="footer">
+            <p id="footerText">Tyler M Silva Jr. 3/x/2019. TylerSilva2019@gmail.com. Computer Programing and Web Development, Assabet Valley Regional Technical High School. 
+            215 Fitchburg St, Marlborough, MA. (508) 485-9430</p>
+        </marquee>
+    
+    </body>
+</html>
