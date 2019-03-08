@@ -1,7 +1,21 @@
 <html>
     <head>
+        <!--  
+        * page: robotics.html
+        *
+        * Definition: a page describing all of the things I did in robotics this year
+        *
+        * Author: Tyler Silva
+        *
+        * Date: 3/5/2019
+        *
+        * History: 3/8/2019 added better comments
+        -->
         <link rel="stylesheet" type="text/css" href="assets/style.css">
         <script src="assets/code.js"></script>
+        <map name="map">
+            <area shape="rect" coords="0,0,1000000,1000000" href="javascript:alert('Alerts and image maps are a requirement. Here are both');">
+        </map>
     </head>
     
     <body onscroll="checkScroll();" onload="checkUrl();">
@@ -58,7 +72,7 @@
             <table class="homeBox">
                 <tr>
                     <td class="homeImgBox">
-                        <img src="assets/FTCBot.jpg" class="homeImg"></img>
+                        <img src="assets/FTCBot.jpg" class="homeImg" usemap="#map"></img>
                     </td>
                     <td class="homeTxt">
                         <p>
@@ -70,7 +84,8 @@
             <table class="homeBox">
                 <tr>
                     <td class="homeImgBox">
-                        <img src="assets/FTCfield.jpg" class="homeImg"></img>
+                        <div class="homeImg" id="hidable"></div>
+                        <img src="assets/FTCfield.jpg" class="homeImg" usemap="#map"></img>
                     </td>
                     <td class="homeTxt">
                         <p>
@@ -82,7 +97,7 @@
             <table class="homeBox">
                 <tr>
                     <td class="homeImgBox">
-                        <img src="assets/FRC.jpg" class="homeImg"></img>
+                        <img src="assets/FRC.jpg" class="homeImg" usemap="#map"></img>
                     </td>
                     <td class="homeTxt">
                         <p>
@@ -91,12 +106,12 @@
                     </td>
                 </tr>
             </table>
-            
         </div>
         <marquee id="footer">
             <p id="footerText">Tyler M Silva Jr. 3/x/2019. TylerSilva2019@gmail.com. Computer Programing and Web Development, Assabet Valley Regional Technical High School. 
             215 Fitchburg St, Marlborough, MA. (508) 485-9430</p>
         </marquee>
+        
     
     </body>
 </html>

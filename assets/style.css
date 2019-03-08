@@ -1,3 +1,14 @@
+ /**
+ * program: style.css
+ *
+ * Definition: defines all of the css for the html
+ *
+ * Author: Tyler Silva
+ *
+ * Date: 3/5/2019
+ *
+ * History: 3/8/2019 added better comments
+ */
 #header
 {
     position: fixed;
@@ -53,7 +64,7 @@ body
 }
 .closeAnim
 {
-    left:-13vw;
+    left:-15vw;
     -webkit-transition: left 1s;
     transition: left 1s; 
 }
@@ -70,7 +81,7 @@ body
 #menu
 {
     position:fixed;
-    width:13vw;
+    width:15vw;
     height:100vh;
     background-color: #ebebd9;
     z-index:100;
@@ -99,6 +110,7 @@ body
     vertical-align: middle;
     color: #ebebd9;
     font-size:3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #footer
 {
@@ -151,6 +163,7 @@ body
 {
     font-size:2vw;
     padding:1vw;
+    font-family:candara, Arial, Helvetica, sans-serif;
 }
 .navText
 {
@@ -159,6 +172,7 @@ body
     color: rgba(3,28,52, 1);
     font:inherit;
     font-size:3vw;
+    font-family: "Lucida Console", Monaco, monospace;
     -webkit-transition: color var(--duration);
     transition: color var(--duration); 
 }
