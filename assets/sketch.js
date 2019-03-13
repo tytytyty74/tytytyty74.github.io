@@ -5,7 +5,7 @@
  *             2019 robot. it is used to demonstrate that the robot moves in 
  *             the correct direction.
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/6/2019
  *
@@ -22,7 +22,7 @@ var cornersVectors;
  *
  * Definition: creates the canvas and puts it in the right place
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *
@@ -39,7 +39,7 @@ function setup() {
  *
  * Definition: copy pasted from the FTC Aztechs 12566 2019 robot. x and y are controller inputs.
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 12/6/2018
  *
@@ -87,7 +87,7 @@ function setmovement(x, y)
  *
  * Definition: adds all 4 vectors from each corner.
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *
@@ -108,7 +108,7 @@ function addAll(vectors)
  * Definition: the code that is run every frame. use inline comments to follow 
  *             the logic.
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *

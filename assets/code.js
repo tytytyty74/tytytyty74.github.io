@@ -3,7 +3,7 @@
  *
  * Definition: holds all functions used by the HTML
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *
@@ -15,7 +15,7 @@
  *
  * Definition: opens and closes the menu, as well as changes the url to match.
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/5/2019
  *
@@ -55,7 +55,7 @@ function menu(addClass, removeClass)
  *
  * Definition: replace or add to the end of a string
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *
@@ -81,7 +81,7 @@ function replace(str, a, b)
  *
  * Definition: makes the header opaque when the page has scrolled, and tranparent when at the top
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/5/2019
  *
@@ -135,7 +135,7 @@ function getUrlVars()
  *
  * Definition: if the url says menu = true, start with the menu open
  *
- * Author: Tyler Silva
+ * Author: [redacted]
  *
  * Date: 3/7/2019
  *
